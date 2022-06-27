@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Appointment</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Inter"
+    />
+  </head>
+  <body>
+    <header>
+      <nav class="container">
+        <a href="index.html" class="item">Home</a>
+        <a href="inspiration.html" class="item">Inspiration</a>
+        <a href="form.html" class="item">Appointment</a>
+      </nav>
+    </header>
+    <main>
+      <h1>Tattoo appointment</h1>
+
+      <form name="contact" method="POST" data-netlify="true">
+        <p>
+          <label>Your Name: <input type="text" name="name" /></label>
+        </p>
+        <p>
+          <label>Your Email: <input type="email" name="email" /></label>
+        </p>
+        <p>
+          <label>Your Tel: <input type="tel" name="phone" /></label>
+        </p>
+        <p>
+          <label>Your Age: <input type="number" name="age" /></label>
+        </p>
+        <p>
+          <label
+            >Date of appointment: <input type="date" name="date of appointment"
+          /></label>
+        </p>
+        <div>
+          Your Gender:
+          <div>
+            <label>Male</label>
+            <input type="radio" name="gender" value="male" />
+          </div>
+          <div>
+            <label>Female</label>
+            <input type="radio" name="gender" value="female" />
+          </div>
+        </div>
+        <hr />
+        <div>
+          Style of your tattoo:
+          <div>
+            <label>Classic</label>
+            <input type="checkbox" name="style" value="Classic" />
+          </div>
+          <div>
+            <label>New School</label>
+            <input type="checkbox" name="style" value="New School" />
+          </div>
+          <div>
+            <label>Japanese</label>
+            <input type="checkbox" name="style" value="Japanese" />
+          </div>
+        </div>
+        <hr />
+        <p>
+          <label>Color of tattoo:</label>
+          <input type="color" name="favcolor" />
+        </p>
+        <p>
+          <label>Description <textarea name="message"></textarea></label>
+        </p>
+        <p>
+          <label>Add your URL to the design<input type="url" /> </label>
+        </p>
+
+        <p>
+          <button type="Reset">Clear the form</button>
+        </p>
+        <p>
+          <button type="submit">Send</button>
+        </p>
+      </form>
+    </main>
+    <footer>copyright 2022 irina</footer>
+  </body>
+</html>
